@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>0x2c0d&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="0x2c0d's blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="0x2c0d's blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="0x2c0d's blog">
 <meta name="twitter:description">
   
   
@@ -49,14 +49,14 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/16/hexo-github-blog-init/">用github hexo 搭建自己的blog</a>
+      <a class="article-title" href="/2015-09-16-hexo-github-blog-init.html">用github hexo 搭建自己的blog</a>
     </h1>
   
 
       </header>
     
     <div class="article-meta">
-      <a href="/2015/09/16/hexo-github-blog-init/" class="article-date">
+      <a href="/2015-09-16-hexo-github-blog-init.html" class="article-date">
   <time datetime="2015-09-16T03:05:11.000Z" itemprop="datePublished">2015-09-16</time>
 </a>
       
@@ -66,23 +66,78 @@
       
         <h1 id="基本流程">基本流程</h1><ul>
 <li><p>nodejs<br>直接下载编译好的gz包，解压到某个文件夹，例如 /opt/nodejs<br>然后在 ~/.profile 里面<br>export NODEJS_HOME=/opt/nodejs<br>export PATH=$PATH:$NODEJS_HOME/bin</p>
-<p>保存后，重启启动 terminal 就可以正常使用了 </p>
-</li>
-<li><p>hexo<br>npm install hexo –no-optional<br>正常安装<br> hexo init hexoblog<br> cd  hexoblog<br> npm install  把依赖都装上<br> npm install hexo-deployer-git 把github的提交插件装上</p>
-</li>
-<li><p>配置发布到github<br> 修改 _config.yml 的deploy章节<br>  type: git<br>  repo: <a href="https://github.com/0x2c0d/0x2c0d.github.io.git" target="_blank" rel="external">https://github.com/0x2c0d/0x2c0d.github.io.git</a></p>
-<p>回到 hexoblog 根目录<br> hexo g<br> hexo d<br> 输入github的用户名密码，然后就deploy成功了<br> 直接输入 0x2c0d.github.io 就可以访问了</p>
-</li>
-<li><p>源代码放到github<br> 上面的步骤只是把编译好的文件提交到了 0x2c0d.github.io这个工程上。<br> 而 hexoblog 没有保存到github上面<br> 所以在github上先新建一个 hexoblog的工程。<br> git clone <a href="https://github.com/0x2c0d/hexoblog.git" target="_blank" rel="external">https://github.com/0x2c0d/hexoblog.git</a><br> 然后把原来创建建好的内容都复制到这个git工程里<br> cp －rf hexoblog0/* hexoblog/<br> 然后进入 hexoblog<br> git add .<br> git commit - m “init blog”<br> git push  </p>
-<ul>
-<li><p>写文章<br>cd hexoblog/source/_post/<br>hexo new hexo-github-blog-int<br>就会创建一个 hexo-github-blog-init.md文件<br>然后可以用自己喜欢的编辑器进行编写<br>写完之后，<br>hexo g<br>hexo s<br>去 <a href="http://127.0.0.1:4000" target="_blank" rel="external">http://127.0.0.1:4000</a> 看看效果<br>可以的就 ctrl＋c关掉本地server<br>然后 hexo d 提交到远程的 0x2c0d.github.io 上面。<br>然后 回到 hexoblog目录<br>git add .<br>git commit -m “add new post”<br>git push</p>
-<p>把最新的源代码也保存一下</p>
+<p>保存后，重启启动 terminal 就可以正常使用。</p>
 </li>
 </ul>
-</li>
-</ul>
-<p> 这样，就可以保持数据不丢失了。</p>
+        
+      
+    </div>
+  
+  </div>
+  
+</article>
 
+
+    
+      <article id="post-redis-sentinel-config" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015-07-15-redis-sentinel-config.html">redis sentinel 配置步骤</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015-07-15-redis-sentinel-config.html" class="article-date">
+  <time datetime="2015-07-15T07:32:18.000Z" itemprop="datePublished">2015-07-15</time>
+</a>
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文是对redis官方的高可用方案sentinel的配置说明和需要注意的信息。</p>
+        
+      
+    </div>
+  
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-redis-cluster-config-manually" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015-07-14-redis-cluster-config-manually.html">redis cluster 手工搭建配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015-07-14-redis-cluster-config-manually.html" class="article-date">
+  <time datetime="2015-07-14T11:34:49.000Z" itemprop="datePublished">2015-07-14</time>
+</a>
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前言">前言</h1><p>自己摸索的redis cluster 手工配置的方法, 方便没有ruby环境的情况下进行配置,同时也方便了解redis cluster的大体结构。</p>
+        
       
     </div>
   

@@ -9,8 +9,9 @@ tags:
   export NODEJS_HOME=/opt/nodejs
   export PATH=$PATH:$NODEJS_HOME/bin
 
-  保存后，重启启动 terminal 就可以正常使用了 
-
+  保存后，重启启动 terminal 就可以正常使用。
+  
+<!--more-->
 * hexo
   npm install hexo --no-optional
 正常安装
