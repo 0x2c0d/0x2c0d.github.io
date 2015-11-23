@@ -672,6 +672,36 @@ a.article-title:hover,
   max-width: 100%;
   margin: 0 auto;
 }
+.article-toc {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 110px;
+  font-size: 0.9em;
+  width: 260px;
+  margin-left: 400px;
+  padding-left: 20px;
+  overflow-y: auto;
+  line-height: 1.4em;
+  max-height: 40.32em;
+}
+.article-toc h3 {
+  font-weight: bold;
+  margin-left: 20px;
+}
+.article-toc .toc-item {
+  list-style: none;
+  margin-left: 20px;
+}
+.article-toc .toc-item a {
+  color: #000;
+  text-decoration: none;
+}
+@media screen and (min-width: 1400px) {
+  .article-toc {
+    display: block;
+  }
+}
 #comments {
   margin: 50px 0;
 }

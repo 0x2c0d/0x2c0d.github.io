@@ -14,6 +14,7 @@ tags:
 <!--more-->
 * hexo
   npm install hexo --no-optional
+  npm install -g hexo-cli
 正常安装
    hexo init hexoblog
    cd  hexoblog
