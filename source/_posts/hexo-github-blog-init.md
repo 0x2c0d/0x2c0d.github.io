@@ -19,7 +19,7 @@ tags:
    hexo init hexoblog
    cd  hexoblog
    npm install  把依赖都装上
-   npm install hexo-deployer-git 把github的提交插件装上
+   npm install hexo-deployer-git --save 把github的提交插件装上
 
 * 配置发布到github
    修改 _config.yml 的deploy章节

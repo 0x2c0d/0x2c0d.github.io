@@ -15,7 +15,7 @@ nodejs直接下载编译好的gz包，解压到某个文件夹，例如 /opt/nod
 <meta property="og:description" content="基本流程
 nodejs直接下载编译好的gz包，解压到某个文件夹，例如 /opt/nodejs然后在 ~/.profile 里面export NODEJS_HOME=/opt/nodejsexport PATH=$PATH:$NODEJS_HOME/bin
 保存后，重启启动 terminal 就可以正常使用。">
-<meta property="og:updated_time" content="2015-11-23T04:43:31.000Z">
+<meta property="og:updated_time" content="2015-11-23T04:52:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用github hexo 搭建自己的blog">
 <meta name="twitter:description" content="基本流程
@@ -78,7 +78,7 @@ nodejs直接下载编译好的gz包，解压到某个文件夹，例如 /opt/nod
 </ul>
 <a id="more"></a>
 <ul>
-<li><p>hexo<br>npm install hexo –no-optional<br>npm install -g hexo-cli<br>正常安装<br> hexo init hexoblog<br> cd  hexoblog<br> npm install  把依赖都装上<br> npm install hexo-deployer-git 把github的提交插件装上</p>
+<li><p>hexo<br>npm install hexo –no-optional<br>npm install -g hexo-cli<br>正常安装<br> hexo init hexoblog<br> cd  hexoblog<br> npm install  把依赖都装上<br> npm install hexo-deployer-git –save 把github的提交插件装上</p>
 </li>
 <li><p>配置发布到github<br> 修改 _config.yml 的deploy章节<br>  type: git<br>  repo: <a href="https://github.com/0x2c0d/0x2c0d.github.io.git" target="_blank" rel="external">https://github.com/0x2c0d/0x2c0d.github.io.git</a></p>
 <p>回到 hexoblog 根目录<br> hexo g<br> hexo d<br> 输入github的用户名密码，然后就deploy成功了<br> 直接输入 0x2c0d.github.io 就可以访问了</p>
